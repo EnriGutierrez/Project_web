@@ -1,19 +1,311 @@
-//login en html?
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" />
-<title>web</title>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquor Store</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">Logo</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="/images/icon_burger.png" class="menu-icono" alt="menu" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Producto</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li class="submenu">
+              <img id="img-carrito" src="/img/car.svg" alt="car" />
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="header-content container">
+        <div class="header-txt">
+          <span>Bienvenido a nuestra tienda</span>
+          <h1>Ofertas especiales</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo in
+            cupiditate vitae officiis velit odio molestias aspernatur dolores
+            fuga pariatur, iste modi, laborum voluptates distinctio illum
+            blanditiis ab, odit tempora.
+          </p>
+          <div class="butons">
+            <a hrf="#" class="btn-1">Información</a>
+            <a hrf="#" class="btn-1">Leer mas</a>
+          </div>
+        </div>
 
-</head>
-<body>
-<form action="login.php" method="post">
-    <label for="username">Username</label>
-    <input type="text" name="username" id="username">
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-    <input type="submit" value="Login">
-  </form>
-</body>
+        <div class="header-img">
+          <img src="/img/aki.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- Ofertas-->
+    <section class="oferts container">
+      <div class="ofert-1 b1">
+        <div class="ofert-txt">
+          <h3>Offerta del dia:</h3>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ofert-img">
+          <img src="/img/5.jpg" alt="" />
+        </div>
+      </div>
+      <div class="ofert-1 b2">
+        <div class="ofert-txt">
+          <h3>Offerta del dia:</h3>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ofert-img">
+          <img src="/img/9.jpg" alt="" />
+        </div>
+      </div>
+      <div class="ofert-1 b3">
+        <div class="ofert-txt">
+          <h3>Offerta del dia:</h3>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ofert-img">
+          <img src="/img/7.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- fin de oferta-->
+    <main class="products container">
+      <h2>Productos</h2>
+      <div class="box-container" id="lista-1">
+        <!-- esta son los productos-->
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="2">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="3">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="4">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="5">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="6">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="8">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="9">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="10">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="11">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/la_vieille.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Elisyum</h3>
+            <p>Calidad premiun</p>
+            <p class="precio">$20</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="12">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        
+        
+        
+        
+        <!--fin de la lista del producto-->
+      </div>
+      <div class="btn-2" id="load-more">Cargar mas</div>
+    </main>
+    <section class="testimonial container">
+      <span>Testimonios</span>
+      <h2>Que opinan nuestros clientes</h2>
+      <div class="testimonial-content">
+        <div class="testimonial-1">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            nulla unde, necessitatibus dolorum error excepturi assumenda
+            repellat inventore. Dignissimos sed nostrum aliquam nam doloremque
+            autem ducimus vitae vero pariatur. Commodi.
+          </p>
+          <img src="/img/amazon.png" alt="" />
+          <h4>Lorem impsum</h4>
+        </div>
+        <div class="testimonial-1">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            nulla unde, necessitatibus dolorum error excepturi assumenda
+            repellat inventore. Dignissimos sed nostrum aliquam nam doloremque
+            autem ducimus vitae vero pariatur. Commodi.
+          </p>
+          <img src="images/user1.jpg" alt="" />
+          <h4>Lorem impsum</h4>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="link">
+          <h3>Lore</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Lore</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Lore</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Lore</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Js/script.js"></script>
+  </body>
 </html>
